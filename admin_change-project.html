@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+
+</head>
+
+<body class="js-loading">
+    <div id="loader">
+        <div id="cube-loader">
+            <div class='sk-rotating-plane'></div>
+        </div>
+    </div>
+    <!--/Loader-->
+
+    <div id="main" class="admin">
+        <div id="wrapper">
+            <header>
+                <div class="container-1170 flex">
+                    <div class="logo">
+                    	<a href="#"><span class="img"></span>ИнтерГрупп</a>
+                    </div>
+                    <div class="right-block">
+                        <div class="name">Администратор</div>
+                        <a href="#" class="out">Выход</a>
+                    </div>
+                </div><!--container-->
+                <nav class="menu">
+                    <div class="container-1170">
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <section id="admin-about" class="admin_change-project">
+                <div class="container-1170">
+                    <div class="top flex">
+                        <div class="main-title"><h1>О проекте - редактирование</h1></div>
+                        <div class="btn-block flex">
+                        	<a href="#" class="btn">Сохранить проект</a>
+                            <a href="#" class="btn remove-project">Удалить проект</a>
+                        </div>
+                    </div><!--top-->
+                    
+                    <div class="first-screen">
+                        <form action="" method="post">
+                            <div class="form-flex">
+                                <div class="left-block">
+                                    <input type="text" class="input-form" placeholder="Название жилого комплекса" />
+                                    <input type="text" class="input-form" placeholder="Ссылка на сайт" />
+                                    <input type="text" class="input-form" placeholder="Адрес жилого комплекса" />
+                                    
+                                    <div class="add-file">
+                                        <input type="file" name="file[]" id="file-add" class="inputfile" data-multiple-caption="{count} files selected" multiple onchange="onFileSelected(event)" />
+                                        <label for="file-add"><span><p>Загрузить фото</p><img src="img/ico/add.png" alt=""/></span></label>
+                                    </div><!--add-->
+                                    
+                                </div>
+                                <div class="right-block">
+                                    <div class="photo-block">
+                                        <div class="tit">Фото комплекса на первый экран</div>
+                                        <img id="myimage" height="200">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div><!--first-screen-->
+                    
+                    
+                    <div class="second-screen">
+                        <div class="tit"><h2>Экран “О проекте”</h2></div>
+                        <form action="" method="post">
+                            <div class="form-flex">
+                                <div class="item">
+                                	<input type="text" class="input-form" placeholder="Площадь ЖК" />
+                                </div>
+                                <div class="item">
+                                	<input type="text" class="input-form" placeholder="Год сдачи" />
+                                </div>
+                                
+                                <div class="item select-block">
+                                    <select>
+                                        <option selected disabled>Сатус</option>
+                                        <option>Сатус 1</option>
+                                        <option>Сатус 2</option> 
+                                    </select>
+                                </div>
+                            </div>
+                            <textarea class="input-form" placeholder="Текст о проекте"></textarea>
+                        </form>
+                    </div><!--second screen-->
+                    
+                    
+                    <div class="gallery-screen">
+                        <div class="tit"><h2>Галерея проекта</h2></div>
+                        <form action="" method="post">
+                            <div class="gallery_flex">
+                                <div class="photo-block gall_photo-1 gallery_item">
+                                    <div class="add-file">
+                                        <input type="file" name="file[]" id="gall-add-1" class="inputfile" data-multiple-caption="{count} files selected" multiple onchange="onFileSelected2(event)" />
+                                        <label for="gall-add-1"><span><p>Загрузить фото</p><img src="img/ico/add.png" alt=""/></span></label>
+                                        <div class="img"><img id="gall-1"></div>
+                                    </div><!--add-->
+                                </div><!--gallery_item-->
+                                <div class="gallery_item">
+                                    <div class="tit">Фото в галерее</div>
+                                </div><!--gallery_item-->
+                                <div class="gallery_item">
+                                    <div class="tit">Фото в галерее</div>
+                                </div><!--gallery_item-->
+                                <div class="gallery_item">
+                                    <div class="tit">Фото в галерее</div>
+                                </div><!--gallery_item-->
+                                <div class="gallery_item">
+                                    <div class="tit">Фото в галерее</div>
+                                </div><!--gallery_item-->
+                                <div class="gallery_item">
+                                    <div class="tit">Фото в галерее</div>
+                                </div><!--gallery_item-->
+                            </div> 
+                            
+                            <div class="btn-block flex">
+                                <a href="#" class="btn">Сохранить проект</a>
+                                <a href="#" class="btn remove-project">Удалить проект</a>
+                            </div>
+                        </form>
+                    </div><!--gallery-screen-->
+                </div><!--container-->
+            </section>
+
+        </div><!-- End #wrapper -->
+    </div><!--/Main-->
+
+
+    
+    
+    
+    <script src="js/custom-file-input.js"></script>
+	<script>
+        function onFileSelected(event) {
+          var selectedFile = event.target.files[0];
+          var reader = new FileReader();
+        
+          var imgtag = document.getElementById("myimage");
+          imgtag.title = selectedFile.name;
+        
+          reader.onload = function(event) {
+            imgtag.src = event.target.result;
+			
+			$('.admin .first-screen .photo-block').addClass('act');
+          };
+        
+          reader.readAsDataURL(selectedFile);
+		}
+		
+	 //file img 2
+	 function onFileSelected2(event) {
+          var selectedFile = event.target.files[0];
+          var reader2 = new FileReader();
+        
+          var imgtag2 = document.getElementById("gall-1");
+          imgtag2.title = selectedFile.name;
+        
+          reader2.onload = function(event) {
+            imgtag2.src = event.target.result;
+			
+			$('.admin .gallery-screen .photo-block').addClass('act');
+          };
+        
+          reader2.readAsDataURL(selectedFile);
+        }
+		
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
