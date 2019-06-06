@@ -429,9 +429,10 @@ a.btn:hover,
 
 #menu .menu li a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #404040;
     font-family: 'gilroyextrabold';
+    text-transform: uppercase;
 }
 
 #menu .menu li a:hover {
@@ -1627,7 +1628,6 @@ footer .footer_top li a:hover {
     background: #fff;
     border-radius: 6px;
     padding: 75px 90px 55px;
-    border-bottom: 10px solid #56b46c;
     position: relative;
     z-index: 2;
 }
@@ -1684,6 +1684,7 @@ input::-moz-placeholder {
 }
 
 input:-moz-placeholder {
+
     opacity: 1;
     transition: opacity 0.3s ease;
     font-family: 'gilroylight';
