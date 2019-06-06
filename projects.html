@@ -206,7 +206,7 @@
             </section>
 
             <section id="object-map">
-                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>&amp;scroll=false" type="text/javascript"></script>
                 <script>
                     ymaps.ready(init);
 
@@ -218,6 +218,7 @@
                         }, {
                             suppressMapOpenBlock: true
                         })
+					
 
                         myMap.geoObjects
                             .add(new ymaps.Placemark([59.827401, 30.344345], {
