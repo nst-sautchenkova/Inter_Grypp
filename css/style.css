@@ -1405,6 +1405,9 @@ footer .footer_top li a:hover {
     #object-map #map {
         height: 600px;
     }
+	#object-map #map .ymaps-2-1-74-map{
+        height:100% !important
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -2576,12 +2579,14 @@ select {
     #object-map #map {
         padding-top: 40px;
     }
+    #object-map{
+        padding-top:40px
+    }
     #object-map .main-title {
         left: 40px;
         position: relative;
         top: 0;
         display: block;
-        margin-bottom: 40px;
     }
 }
 
