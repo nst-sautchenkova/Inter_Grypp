@@ -2613,7 +2613,9 @@ select {
         z-index: 999;
     }
     body.open-menu {
-        position: fixed
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     #menu .menu ul {
         flex-direction: column;
