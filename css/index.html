@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+
+</head>
+
+<body class="js-loading">
+    <div id="loader">
+        <div id="cube-loader">
+            <div class='sk-rotating-plane'></div>
+        </div>
+    </div>
+    <!--/Loader-->
+
+    <div id="main">
+        <div id="wrapper">
+            <header>
+                <div class="container-1170 flex">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <!-- /logo -->
+
+                    <nav id="menu">
+                        <div class="cd-nav-trigger">
+                            <div class="hamburger-menu">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!--/menu-->
+
+                    <div class="header_adds align-right">
+                        <a href="#">Санкт-Петербург,</p><p>Московское шоссе 13Б</p></a>
+                    </div>
+
+                    <div class="header_contacts align-right">
+                        <div id="feedback-modal" class="modal-block">
+                            <div class="tel">+7 812 607-11-39</div>
+                            <p>Заказать звонок</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section id="main-banner">
+                <div class="container">
+                    <div class="txt fadeEl">
+                        <div class="flex">
+                            <h1>О компании</h1>
+                            <p>Компания «ИнтерГрупп»</p>
+                        </div>
+                        <p>Группа Компаний «ИнтерГрупп»
+                            <br/> является крупным застройщиком
+                            <br/> и девелопером на российском рынке. </p>
+                        <p>Компания специализируется на строительстве
+                            <br/> крупномасштабных жилых микрорайонов
+                            <br/> и коммерческих объектов. </p>
+                    </div>
+                </div>
+                <!--container-->
+            </section>
+
+            <section id="main-about">
+                <div class="container">
+                    <div class="flex">
+                        <div class="left-block">
+                            <div class="years fadeEl fadeEl-left">
+                                <p>Лет работаем для вашей комфортной жизни</p>
+                            </div>
+
+                            <div id="slider_project" class="slider fadeEl fadeEl-left">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <figure class="project">
+                                                <div class="img">
+                                                    <img src="img/project.jpg" alt="" />
+                                                </div>
+                                                <figcaption>
+                                                    <div class="tag">
+                                                        <div class="tag-value value-1">Квартиры от 6 мнл. руб.</div>
+                                                    </div>
+                                                    <!-- .tag -->
+                                                    <div class="info">
+                                                        <h3>ЖК “Звезды столиц”</h3>
+                                                        <p>Корпусов 7</p>
+                                                        <p>Квартир 1 700</p>
+                                                        <p>Сдача в 2023 г.</p>
+                                                        <p>Метро “Звездное”</p>
+                                                    </div>
+                                                    <!-- .info -->
+                                                    <a href="#" class="btn">На страницу проекта</a>
+                                                </figcaption>
+                                            </figure>
+                                            <!-- /project -->
+                                        </div>
+                                        <!-- End .swiper-slide -->
+
+                                        <div class="swiper-slide">
+                                            <figure class="project">
+                                                <div class="img">
+                                                    <img src="img/project.jpg" alt="" />
+                                                </div>
+                                                <figcaption>
+                                                    <div class="tag">
+                                                        <div class="tag-value value-1">Квартиры от 6 мнл. руб.</div>
+                                                    </div>
+                                                    <!-- .tag -->
+                                                    <div class="info">
+                                                        <h3>ЖК “Звезды столиц”</h3>
+                                                        <p>Корпусов 7</p>
+                                                        <p>Квартир 1 700</p>
+                                                        <p>Сдача в 2023 г.</p>
+                                                        <p>Метро “Звездное”</p>
+                                                    </div>
+                                                    <!-- .info -->
+                                                    <a href="#" class="btn">На страницу проекта</a>
+                                                </figcaption>
+
+                                            </figure>
+                                            <!-- /project -->
+                                        </div>
+                                        <!-- End .swiper-slide -->
+
+                                    </div>
+                                    <!--swiper-wrapper-->
+
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <!-- End #slider_project -->
+
+                            <script>
+                                var swiper = new Swiper('#slider_project .swiper-container', {
+                                    spaceBetween: 0,
+                                    centeredSlides: true,
+                                    slidesPerView: 1,
+                                    effect: 'flip',
+                                    slideToClickedSlide: true,
+                                    loop: true,
+
+                                    pagination: {
+                                        el: '#slider_project .swiper-pagination',
+                                        clickable: true,
+                                    },
+                                });
+                            </script>
+
+                        </div>
+                        <!--left-block-->
+
+                        <div class="right-block">
+                            <div class="main-title fadeEl fadeEl-right">
+                                <h2>Мы <span class="blue">настоящие<br/> профессионалы</span><br/> своего дела</h2>
+                            </div>
+
+                            <div class="about-flex">
+                                <div class="item fadeEl">
+                                    <div class="ico"><img src="img/ico/1.png" alt="" /></div>
+                                    <div class="txt">
+                                        <h3>Технологии</h3>
+                                        <p>Индивидуальные счетчики отопления, скрытые инженерные коммуникации. Дома облицованы натуральным кирпичом. Строим надежно, строим на века!</p>
+                                    </div>
+                                </div>
+                                <!--item-->
+                                <div class="item fadeEl">
+                                    <div class="ico"><img src="img/ico/2.png" alt="" /></div>
+                                    <div class="txt">
+                                        <h3>Расположение</h3>
+                                        <p>Каждый наш проект разрабатывается с учетом обеспечения траспортной доступности. Рядом с вашим домом - магазин, парковка, общественный транспорт.</p>
+                                    </div>
+                                </div>
+                                <!--item-->
+                                <div class="item fadeEl">
+                                    <div class="ico"><img src="img/ico/3.png" alt="" /></div>
+                                    <div class="txt">
+                                        <h3>Все для жизни</h3>
+                                        <p>Индивидуальные проектные решения, паркинг, кладовые, витражное остекление и пр. Дворы проектируются с учетом размещения детских садов и школ.</p>
+                                    </div>
+                                </div>
+                                <!--item-->
+                                <div class="item fadeEl">
+                                    <div class="ico"><img src="img/ico/4.png" alt="" /></div>
+                                    <div class="txt">
+                                        <h3>Инфраструктура</h3>
+                                        <p>В каждом проекте застройки - сбалансированный подход, пространство для прогулок всей семьей. Современные архитектурные решения.</p>
+                                    </div>
+                                </div>
+                                <!--item-->
+                            </div>
+                            <!-- /about-flex -->
+                        </div>
+                        <!--right-block-->
+                    </div>
+                </div>
+                <!--container-->
+            </section>
+
+        </div>
+        <!-- End #wrapper -->
+
+        <footer>
+            <div class="footer_top">
+                <div class="container-1170">
+                    <div class="flex">
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+
+                        <nav class="nav-page">
+                            <ul>
+                                <li><a href="#">ЖК “Две столицы”</a></li>
+                                <li><a href="#">ЖК “Звезды столиц”</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="footer_contacts">
+                            <div id="feedback-modal" class="modal-block">
+                                <div class="tel">+7 812 607-11-39</div>
+                            </div>
+                            <a href="#">Сантк-Петербург,<br/> Московское шоссе 13Б</a>
+                        </div>
+
+                        <div class="footer-info">
+                            <p>Материалы, предоставленные на сайте,
+                                <br/>не являются публичной офертой.</p>
+                            <div class="copyright">© ИнтерГрупп, 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <!--container-->
+            </div>
+
+            <div class="footer_bottom">Создание сайта: АТР-медиа</div>
+        </footer>
+    </div>
+    <!--/Main-->
+
+    <!-- MODAL -->
+    <div class="modal" data-id="#feedback-modal">
+        <div class="modal-ov"></div>
+        <div class="modal-content">
+            <div class="feedback_form">
+                <span class="close">&times;</span>
+                <div class="tit">Закажите обратный звонок,
+                    <br/>заполнив форму</div>
+                <form action="" method="post">
+                    <div class="item-form name-form">
+                        <label>Ваше имя</label>
+                        <input type="text" class="input-form" placeholder="Константин" />
+                    </div>
+                    <div class="item-form">
+                        <input id="phone" type="text" class="input-form" placeholder="Номер телефона" />
+                    </div>
+                    <div class="txt">
+                        <p>Нажимая кнопку “Отправить сообщение”, вы
+                            <br/>соглашаетесь с <a href="#">политикой конфиденицальности</a>.</p>
+                    </div>
+                    <div class="btn-block">
+                        <button class="btn">Перезвоните мне!</button>
+                    </div>
+                </form>
+            </div>
+            <!-- .feedback_form -->
+            <script>
+                $(function() {
+                    $("#phone").mask("8(999) 999-9999");
+                });
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

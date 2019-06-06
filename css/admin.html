@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+
+<body class="js-loading">
+    <div id="loader">
+        <div id="cube-loader">
+            <div class='sk-rotating-plane'></div>
+        </div>
+    </div>
+    <!--/Loader-->
+
+    <div id="main" class="admin">
+        <div id="wrapper">
+            <header>
+                <div class="container-1170 flex">
+                    <div class="logo">
+                    	<a href="#"><span class="img"></span>ИнтерГрупп</a>
+                    </div>
+                    <div class="right-block">
+                        <div class="name">Администратор</div>
+                        <a href="#" class="out">Выход</a>
+                    </div>
+                </div><!--container-->
+                <nav class="menu">
+                    <div class="container-1170">
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <section id="admin-about">
+                <div class="container-1170">
+                    <div class="top flex">
+                        <div class="main-title"><h1>О компании - редактирование</h1></div>
+                        <div class="btn-block">
+                        	<a href="#" class="btn">Сохранить изменения</a>
+                        </div>
+                    </div><!--top-->
+                    
+                    <div class="first-screen">
+                    	<div class="tit"><h2>Первый экран сайта</h2></div>
+                        <form action="" method="post">
+                            <div class="form-flex">
+                                <div class="left-block">
+                                    <input type="text" class="input-form" placeholder="Заголовок" />
+                                    <textarea class="input-form" placeholder="Текст"></textarea>
+                                    
+                                    <div class="add-file">
+                                        <input type="file" name="file[]" id="file-add" class="inputfile" data-multiple-caption="{count} files selected" multiple onchange="onFileSelected(event)" />
+                                        <label for="file-add"><span><p>Загрузить фото</p><img src="img/ico/add.png" alt=""/></span></label>
+                                    </div><!--add-->
+                                    
+                                </div>
+                                <div class="right-block">
+                                    <div class="photo-block">
+                                        <div class="tit">Главное фото</div>
+                                        <img id="myimage" height="200">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--first-screen-->
+                    
+                    
+                    <div class="second-screen">
+                        <div class="tit"><h2>Второй экран сайта</h2></div>
+                        <form action="" method="post">
+                            <div class="form-flex">
+                                <div class="left-block">
+                                    <input type="text" class="input-form" placeholder="Заголовок" />
+                                </div>
+                                <div class="right-block">
+                                    <div class="photo-block">
+                                        <div class="add-file">
+                                            <input type="file" name="file[]" id="file-add2" class="inputfile" data-multiple-caption="{count} files selected" multiple onchange="onFileSelected2(event)" />
+                                            <label for="file-add2"><span><p>Загрузить фото с цифрой</p><img src="img/ico/add.png" alt=""/></span></label>
+                                            <div class="img"><img id="myimage2" height="200"></div>
+                                        </div><!--add-->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--second screen-->
+                    
+                    
+                    <div class="advantage-block">
+                        <div class="top flex">
+                            <div class="tit"><h2>Преимущества</h2></div>
+                            <a href="#">Добавить преимущество</a>
+                        </div>
+                        <div class="admin-table">
+                        	<table>
+                                <tr>
+                                    <th>Иконка</th>
+                                    <th>Заголовок</th>
+                                    <th>Текст</th>
+                                    <th>Действие</th>
+                                </tr>
+                                <tr>
+                                    <td><div class="ico"></div></td>
+                                    <td><h3 class="name">Технологии</h3></td>
+                                    <td><p>Современные стандарты строительства домов позволяют нам строить идеально.</p></td>
+                                    <td>
+                                        <a href="#" class="edit"><img src="img/ico/edit.svg" alt=""/></a>
+                                        
+                                        <div id="delete-modal-2" class="modal-block">
+                                        	<div class="delete"><img src="img/ico/delete.svg" alt=""/></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="ico"></div></td>
+                                    <td><h3 class="name">Расположение</h3></td>
+                                    <td><p>Идеальное расположение для всех и каждого.</p></td>
+                                    <td>
+                                        <a href="#" class="edit"><img src="img/ico/edit.svg" alt=""/></a>
+                                        
+                                        <div id="delete-modal-2" class="modal-block">
+                                        	<div class="delete"><img src="img/ico/delete.svg" alt=""/></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div><!--admin-table-->
+                        
+                        <div class="change-advantage">
+                            <div class="tit"><h2>Редактировать преимущество</h2></div>
+                            <form action="" method="post">
+                                <div class="form-flex">
+                                    <div class="left-block">
+                                        <input type="text" class="input-form" placeholder="Заголовок" />
+                                        <div class="photo-block">
+                                            <div class="add-file">
+                                                <input type="file" name="file[]" id="file-add3" class="inputfile" data-multiple-caption="{count} files selected" multiple onchange="onFileSelected3(event)" />
+                                                <label for="file-add3"><span><p>Загрузить фото</p><img src="img/ico/add.png" alt=""/></span></label>
+                                                <div class="img"><img id="myimage3" height="200"></div>
+                                            </div><!--add-->
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="right-block">
+                                        <textarea class="input-form" placeholder="Текст"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-block">
+                                	<a href="#" class="btn">Сохранить преимущество</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!--advantage-block-->
+                    
+                    
+                    
+                </div><!--container-->
+            </section>
+
+        </div><!-- End #wrapper -->
+    </div><!--/Main-->
+
+
+
+    
+    
+    
+    
+    <script src="js/custom-file-input.js"></script>
+	<script>
+        function onFileSelected(event) {
+          var selectedFile = event.target.files[0];
+          var reader = new FileReader();
+        
+          var imgtag = document.getElementById("myimage");
+          imgtag.title = selectedFile.name;
+        
+          reader.onload = function(event) {
+            imgtag.src = event.target.result;
+			
+			$('.admin .first-screen .photo-block').addClass('act');
+          };
+        
+          reader.readAsDataURL(selectedFile);
+		}
+		
+	 //file img 2
+	 function onFileSelected2(event) {
+          var selectedFile = event.target.files[0];
+          var reader2 = new FileReader();
+        
+          var imgtag2 = document.getElementById("myimage2");
+          imgtag2.title = selectedFile.name;
+        
+          reader2.onload = function(event) {
+            imgtag2.src = event.target.result;
+			
+			$('.admin .second-screen .photo-block').addClass('act');
+          };
+        
+          reader2.readAsDataURL(selectedFile);
+        }
+		
+		
+	 //file img 3
+	 function onFileSelected3(event) {
+          var selectedFile = event.target.files[0];
+          var reader3 = new FileReader();
+        
+          var imgtag3 = document.getElementById("myimage3");
+          imgtag3.title = selectedFile.name;
+        
+          reader3.onload = function(event) {
+            imgtag3.src = event.target.result;
+			$('.admin .change-advantage .photo-block').addClass('act');
+          };
+        
+          reader3.readAsDataURL(selectedFile);
+        }
+    </script>
+    
+    <!-- MODAL -->
+    <div class="modal" data-id="#delete-modal">
+        <div class="modal-ov ov2"></div>
+        <div class="modal-content">
+            <div class="delete-modal">
+                <span class="close">&times;</span>
+                <div class="tit">Вы действительно хотите удалить <br/>проект ЖК “Две столицы”?</div>
+                <div class="btn-block flex">
+                    <a href="#" class="btn b-delete">Да</a>
+                    <a href="#" class="btn">Отмена</a>
+                </div>
+            </div><!-- .delete-modal -->
+        </div>
+    </div>
+    
+    <!-- MODAL -->
+    <div class="modal" data-id="#delete-modal-2">
+        <div class="modal-ov ov2"></div>
+        <div class="modal-content">
+            <div class="delete-modal">
+                <span class="close">&times;</span>
+                <div class="tit">Вы действительно хотите удалить <br/>проект ЖК “Две столицы”?</div>
+                <div class="btn-block flex">
+                    <a href="#" class="btn b-delete">Да</a>
+                    <a href="#" class="btn">Отмена</a>
+                </div>
+            </div><!-- .delete-modal -->
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
