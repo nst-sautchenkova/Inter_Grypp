@@ -2587,7 +2587,7 @@ select {
         position: relative;
         top: 0;
         display: block;
-    }
+	}
 }
 
 @media screen and (max-width: 920px) {
@@ -2869,6 +2869,9 @@ select {
         height: 230px;
         overflow: hidden;
     }
+	.open-hidden {
+		overflow: hidden;
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -2883,4 +2886,15 @@ select {
         font-size: 32px;
         line-height: 36px;
     }
+}
+
+
+@media screen and (max-height: 700px) {
+	.modal-content {
+		align-items: flex-start;
+	}
+	.feedback_form {
+		width: 100%;
+		border-radius: 0;
+	}
 }
